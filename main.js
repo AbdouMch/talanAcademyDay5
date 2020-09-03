@@ -2,7 +2,7 @@ buildFloor = function (floorNumber) {
   let floorLength = (pyramidHeight * 2) - 1;
   let nSpaces = floorNumber - 1;
   let nChar = floorLength - (2 * nSpaces);
-  let j = nSpaces + nChar;
+
   var floor = "#";
 
   if (nSpaces > 0) {
@@ -23,10 +23,9 @@ buildFloor = function (floorNumber) {
 }
 
 
-console.log("Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?");
-console.log("la fonction readline n'est pas définie.\n J'ai vu qu'elle est utilisée par spiderMonkey \n compatible avec les navigateur MozillafireFox. \n pour cela j'ai utilisé la fonction prompt");
+console.log("Salut, bienvenue dans ma super pyramide ! Combien d'etages veux-tu ?");
 
-var pyramidHeight = prompt("Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?");
+var pyramidHeight = prompt("Salut, bienvenue dans ma super pyramide ! Combien d'etages veux-tu ?");
 console.log("Voici la pyramide :");
 
 pyramidHeight = parseInt(pyramidHeight);
@@ -40,7 +39,7 @@ if ((pyramidHeight <= 25) && (pyramidHeight >= 1)) {
   }
 }
 else {
-  console.log("Merci de donner un entier inférieur ou égale 25");
+  console.log("Merci de donner un entier inferieur ou egale 25");
 }
 
 
